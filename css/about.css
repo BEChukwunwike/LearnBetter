@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/websiteBGimage.png");
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 400px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    display: flex;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #88070794;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ec792c;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 10px 0 10px;
+    font-size: 14px;
+    color: black;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box{
+    width: 100%;
+    color: black;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    nav img{
+        width: 200px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgba(238, 201, 121, 0.016);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30%;
+        flex-direction: column;
+    }
+    .vision{
+        margin: 2%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40%;
+    }
+    .vision h1{
+        font-size: 20;
+        margin-bottom: 10px;
+    }
+    .mission{
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    }
+    .mission h1{
+        font-size: 20;
+        margin-bottom: 10px;
+    }
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.vision{
+    margin: 2%;
+    display: left;
+    justify-content: space-around;
+}
+.mission{
+    margin: 2%;
+    display: left;
+    justify-content: space-around;
+}
+.team h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 30%;
+}
+
+.team-member h4 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.team-member p {
+    font-size: 16px;
+}
+footer {
+    background-color: #FFA500;
+    color: #030000;
+    text-align: center;
+    font-size: 14px;
+}

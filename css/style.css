@@ -1,0 +1,170 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background image to the body */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/websiteBGimage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Apply a suitable font */
+}
+
+/* Apply playful styling to the header */
+header {
+    background-color: #ff950082;
+    text-align: center;
+    padding: 0;
+}
+
+/* Style for the container of the header */
+.header__container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 10px; /* Adjust the margin-top value as needed */
+}
+
+/* Style for the left section of the header */
+.header__left {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-top: 10px
+}
+
+.header__left h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #f9f7f7;
+    margin-bottom: 10px;
+}
+
+.header__left p {
+    font-size: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Style for the logo container */
+.header__logo {
+    float: left;
+    margin-top: 10px;
+}
+
+/* Style for the logo image */
+.header__logo img {
+    max-width: 120px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.header__nav ul{
+    list-style-type: none;;
+    padding: 0;
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px; /* Add some space between text and nav */
+}
+
+.header__nav ul li {
+    display: inline-block;
+    margin-left: 0 30px;
+}
+
+.header__nav ul li:first-child {
+    margin-left: 0;
+}
+
+.header__nav ul li a {
+    color: #88070794;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+/* Hover effect for navigation links */
+.header__nav ul li a:hover {
+    color: #ec792c; /* Change link color on hover */
+}
+
+/* New styles for navigation link underline */
+.header__nav ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #481e02;
+    display: block;
+    margin: auto;
+    transition: width 0.5s; /* Adjust the transition property */
+}
+
+.header__nav ul li:hover::after {
+    width: 100%; /* Expand the underline on hover */
+}
+
+/* Style for age range and learning area selection dropdowns */
+.select-wrapper {
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.age-dropdown,
+.learning-area-dropdown {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #481e029d;
+    color: #fffefce0;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+.age-dropdown option,
+.learning-area-dropdown option {
+    background-color: rgba(183, 130, 6, 0.377);
+    color: black;
+}
+
+/* Style for age range selection buttons */
+.age-range-selection, .learning-area-selection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin: 10px;
+}
+
+/* Apply colorful styling to the video list section */
+.video-list {
+    padding: 10px;
+}
+
+.video {
+    background-color: #db8d079f;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the footer */
+footer {
+    background-color: #FFA500;
+    color: #030000;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+/* Add more playful styling as needed */

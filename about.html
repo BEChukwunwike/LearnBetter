@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LearnBetter</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="about.html"><img src="../images/LearnBetterLG.png" alt="LearnBetter Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+    <!-- About Section -->
+    <section>
+        <div class="text-box">
+            <h1>About Us</h1>
+            <p>Welcome to LearnBetter! We are dedicated to providing high-quality educational content for young children.
+            <p>Our platform is designed to enhance early years education and help children develop essential skills in a<br>fun and engaging way.
+            <p>At LearnBetter, we curate a collection of age-appropriate videos and interactive activities<br>that cover a wide range of learning areas, from language development to creative arts. Our mission is to<br>support parents and caregivers in providing meaningful learning experiences for their children. Join us on this<br>exciting journey of learning and discovery. Together, we can empower the next generation with knowledge<br>and creativity.</p>
+        </div>
+        <section class="row">
+            <!------Vision----->
+            <div class="vision">
+                <h2>Vision</h2>
+                <p>Our vision is to create a world where every child<br>has access to quality educational content that fosters<br>curiosity, creativity, and a lifelong love for learning.</p>
+            </div>
+            <!-- Mission Statement -->
+            <div class="mission">
+                <h2>Mission</h2>
+                <p>Our mission is to provide a safe and enriching platform<br>that offers engaging educational videos and interactive<br>activities, enabling children to explore, learn, and grow<br>while having fun.</p>
+            </div>
+        </section>
+    </section>
+    <section class="team">
+        <h1>Meet Our Team</h1>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="../images/upscaled (3).png" alt="Team Member 1">
+                <h4>Blessing Chukwunwike</h4>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="../images/upscaled (7).png" alt="Team Member 2">
+                <h4>Dave Ben</h4>
+                <p>Content Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="../images/upscaled (1).png" alt="Team Member 3">
+                <h4>Jane Smith</h4>
+                <p>Tutor</p>
+            </div>
+            <div class="team-member">
+                <img src="../images/upscaled (2).png" alt="Team Member 4">
+                <h4>Claire Olaolu</h4>
+                <p>Tutor</p>
+            </div>
+            <div class="team-member">
+                <img src="../images/upscaled (5).png" alt="Team Member 5">
+                <h4>Daniel Ayuba</h4>
+                <p>Tutor</p>
+            </div>
+        </div>
+    </section>
+<footer>
+        <p>&copy; 2023 LearnBetter. All rights reserved.</p>
+</footer>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
