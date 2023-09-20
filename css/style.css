@@ -19,7 +19,7 @@ body {
 header {
     background-color: #ff950082;
     text-align: center;
-    padding: 0;
+    padding: 10px;
 }
 
 /* Style for the container of the header */
@@ -62,8 +62,8 @@ header {
 
 /* Style for the logo image */
 .header__logo img {
-    max-width: 120px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px; /* Adjust the width as needed */
+    height: 150px; /* Maintain aspect ratio */
 }
 
 .header__nav ul{

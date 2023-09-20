@@ -21,11 +21,14 @@ nav{
     align-items: center;
 }
 nav img{
-    width: 400px;
+    width: 200px;
 }
 .nav-links{
     flex: 1;
     text-align: right;
+    display: flex;
+    margin: 20px;
+    margin-left: 400px;
 }
 .nav-links ul li{
     list-style: none;
@@ -133,9 +136,6 @@ nav img{
     }
     .text-box h1{
         font-size: 20px;
-    }
-    nav img{
-        width: 200px;
     }
     .nav-links ul li{
         display: block;
